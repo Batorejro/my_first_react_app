@@ -10,8 +10,10 @@ const Column = props => {
                 <button onClick={() => props.removeColumn(props.id)}>X</button>
             </div>
             <ul className={styles.cards}>
+
                 {props.cards.map(card => <Card key={card.id} title={card.title} />)}
                 {props.cards.map(card => <Card key={card.id} id={card.id} card={card} columnId={props.id} cards={props.cards} title={card.title} removeCard={props.removeCard} />)}
+
             </ul>
             <CardForm columnId={props.id} addCard={props.addCard} />
         </article>
@@ -21,3 +23,5 @@ const Column = props => {
 
 export default Column;
 
+//{props.cards.map(card => <Card key={card.id} id={card.id} card={card} columnId={props.id} cards={props.cards} title={card.title} removeCard={props.removeCard} />)}
+//{props.cards.map(card => <Card key={card.id} title={card.title} />)}

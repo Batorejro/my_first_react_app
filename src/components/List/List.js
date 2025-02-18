@@ -47,7 +47,7 @@ const List = () => {
             return column
         })
 
-        setColumns(columnsUpdated);
+        setColumns(columnsUpdated);  // tak jak w module
     };
 
     return (
