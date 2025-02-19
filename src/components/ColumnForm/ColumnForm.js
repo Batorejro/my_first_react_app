@@ -6,8 +6,8 @@ const ColumnForm = props => {
 
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
-    const handleSubmit = event => {
-        event.preventDefault();
+    const handleSubmit = e => {
+        e.preventDefault();
         props.action({ title: title, icon: icon });
         setTitle('');
         setIcon('');
@@ -16,8 +16,8 @@ const ColumnForm = props => {
     return (
 
         <form className={styles.columnForm} onSubmit={handleSubmit}>
-            Title: <input type="text" value={title} onChange={event => setTitle(event.target.value)} />
-            Icon: <input type="text" value={icon} onChange={event => setIcon(event.target.value)} />
+            Title: <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
+            Icon: <input type="text" value={icon} onChange={e => setIcon(e.target.value)} />
             <Button>Add Column</Button>
         </form>
     );
