@@ -12,12 +12,9 @@ const Column = props => {
                 <button onClick={() => props.removeColumn(props.id)}>X</button>
             </div>
             <ul className={styles.cards}>
-
-
-                {cards.map(card => <Card key={card.id} title={card.title} />)}
-
+                {cards.map(card => <Card key={card.id} id={card.id} card={card} columnId={props.id} cards={props.cards} title={card.title} />)}
             </ul>
-            <CardForm columnId={props.id} action={props.action} />
+            <CardForm columnId={props.id} />
         </article>
     );
 };
