@@ -1,0 +1,15 @@
+@import '../../styles/settings.scss';
+
+.pagenotfound {
+
+    color: rgba(15, 6, 59, 0.762);
+    background-image: url("4045.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 600%;
+}
+
+.title+.subtitle {
+    margin-top: (- $base-size * 4);
+    font-size: larger;
+}
