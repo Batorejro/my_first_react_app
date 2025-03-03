@@ -4,10 +4,10 @@ import CardForm from '../CardForm/CardForm';
 import { useSelector } from 'react-redux';
 //import { useDispatch } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { getFilteredCards } from '../../redux/store';
+import { getFilteredCards } from '../../redux/cardsReducer';
 //import { removeColumn } from '../../redux/store';
 //import { useEffect } from 'react';
-import { removeColumn } from '../../redux/store';
+import { removeColumn } from '../../redux/columnsReducer';
 
 const Column = props => {
     const dispatch = useDispatch();

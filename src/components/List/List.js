@@ -3,7 +3,8 @@ import ColumnForm from '../ColumnForm/ColumnForm';
 import styles from './List.module.scss';
 import SearchForm from '../SearchForm/SearchForm'
 import { useSelector } from 'react-redux';
-import { getColumnsByList, getListById } from '../../redux/store';
+import { getColumnsByList } from '../../redux/columnsReducer';
+import { getListById } from '../../redux/listsReducer';
 import { useParams } from 'react-router';
 import { Navigate } from 'react-router-dom';
 
@@ -23,10 +24,7 @@ const List = () => {
             <SearchForm />
             <section className={styles.columns}>
                 {columns.map(column =>
-                    <Column
-                        key={column.id}
-                        listId={column.listId}
-                        {...column} />
+                    <Column key={column.id} listId={column.listId} {...column} />
                 )}
             </section>
             <ColumnForm listId={listId} />
