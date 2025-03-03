@@ -33,7 +33,7 @@ const initialState = {
         },
         {
             id: 4,
-            listId: '2',
+            listId: '1',
             title: 'Discopolo  Classic Yass',
             icon: 'music',
         }
@@ -46,7 +46,9 @@ const initialState = {
         { id: 4, isFavorite: false, columnId: 2, title: 'Star Wars' },
         { id: 5, isFavorite: false, columnId: 3, title: 'The Witcher' },
         { id: 6, isFavorite: false, columnId: 3, title: 'Skyrim' },
-        { id: 7, isFavorite: true, columnId: 3, title: 'Test Favorite Card' }
+        { id: 7, isFavorite: false, columnId: 4, title: 'Zenek ballads' },
+        { id: 8, isFavorite: false, columnId: 4, title: 'Szlagiery na waltornię' },
+
     ],
 
     searchString: '',
