@@ -6,7 +6,11 @@ const About = () => {
     return (
         <div className={styles.about}>
             <PageTitle>About</PageTitle>
-            <PageTitle>Coś nowego</PageTitle>
+            <PageTitle>Wincenty zgrywał w chacie
+                Takiego Kadłubka,
+                Że nawet śmieci nie musiał
+                Z domu wyrzucać
+            </PageTitle>
         </div>
     );
 }

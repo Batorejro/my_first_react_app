@@ -1,4 +1,17 @@
 const initialState = {
+
+    lists: [
+        {
+            id: '1',
+            title: 'Things to do...',
+            description: 'Interesting things I want to check out.'
+        },
+        {
+            id: '2',
+            title: 'Test list',
+            description: 'Lorem Ipsum'
+        }
+    ],
     columns: [
         {
             id: 1,
@@ -17,6 +30,12 @@ const initialState = {
             listId: '1',
             title: 'Games',
             icon: 'gamepad',
+        },
+        {
+            id: 4,
+            listId: '2',
+            title: 'Discopolo  Classic Yass',
+            icon: 'music',
         }
     ],
 
@@ -29,20 +48,8 @@ const initialState = {
         { id: 6, isFavorite: false, columnId: 3, title: 'Skyrim' },
         { id: 7, isFavorite: true, columnId: 3, title: 'Test Favorite Card' }
     ],
-    lists: [
-        {
-            id: 1,
-            title: 'Things to do...',
-            description: 'Interesting things I want to check out'
-        },
-        {
-            id: 2,
-            title: 'Test list',
-            description: 'Lorem Ipsum'
-        }
-    ],
-    searchString: '',
 
+    searchString: '',
 };
 
 export default initialState;
