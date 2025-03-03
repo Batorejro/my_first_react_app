@@ -3,6 +3,22 @@
 
 .lists {
     margin-top: $base-size * 2;
+
+    h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            font-size: $base-size * 1.5;
+            transition: $transition;
+
+            &:hover {
+                color: $color-warning;
+            }
+        }
+    }
 }
 
 .heading {
